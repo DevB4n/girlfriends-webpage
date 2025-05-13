@@ -1,0 +1,47 @@
+@font-face {
+    font-family:'Merri-Medium' ;
+    src: url(../media/fonts/Merriweather/static/Merriweather_120pt-Medium.ttf);
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family:'Merrri-Medium' ;
+    font-size: 34px;
+}
+
+
+
+.tittles{
+    display: flex;
+    place-content: center;
+    height:100px;
+    padding-top:20px;
+}
+
+.starterBanner{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(241, 165, 225);
+    height:100px;
+    padding-top:1%;
+    color:white;
+}
+
+.starterBanner button{
+    position:absolute;
+    width:30px;
+    height:30px;
+    background-color: white;
+    opacity: 0.8;
+    border: 1px gray solid;
+    top:3%;
+    left:1%;
+    
+}
