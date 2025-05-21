@@ -1,47 +1,185 @@
+/* Fuente personalizada */
 @font-face {
-    font-family:'Merri-Medium' ;
-    src: url(../media/fonts/Merriweather/static/Merriweather_120pt-Medium.ttf);
+  font-family: 'Merri-Medium';
+  src: url(../media/fonts/Merriweather/static/Merriweather_120pt-Medium.ttf);
 }
 
-
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+@font-face {
+  font-family: 'Merri-Bold';
+  src: url(../media/fonts/Merriweather/static/Merriweather_120pt-Bold.ttf);
 }
 
-h1{
-    font-family:'Merrri-Medium' ;
-    font-size: 34px;
+/* Estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-.tittles{
-    display: flex;
-    place-content: center;
-    height:100px;
-    padding-top:20px;
+h1 {
+  font-family: 'Merri-Bold';
+  font-size: 38px;
+  text-align: center;
 }
 
-.starterBanner{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(241, 165, 225);
-    height:100px;
-    padding-top:1%;
-    color:white;
+/* Estilos para el título */
+.tittles {
+  display: flex;
+  place-content: center;
+  height: 100px;
+  padding-top: 20px;
 }
 
-.starterBanner button{
-    position:absolute;
-    width:30px;
-    height:30px;
-    background-color: white;
-    opacity: 0.8;
-    border: 1px gray solid;
-    top:3%;
-    left:1%;
+/* Estilos del banner de inicio */
+.starterBanner {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(250, 208, 241);
+  height: 100px;
+  padding-top: 1%;
+  color: white;
+  position: relative;
+  margin-bottom:20px
+}
+
+.starterBanner button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  opacity: 0.8;
+  border: 1px gray solid;
+  top: 3vh;
+  left: 1%;
+}
+
+/* Carrusel */
+.carousel {
     
+    position: relative;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out; /* Suavizado del movimiento */
+}
+
+/* Flechas */
+.left,
+.right {
+  background: rgba(252, 252, 252, 0.5);
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out; /* Efecto al pasar el ratón */
+}
+
+.left:hover,
+.right:hover {
+  background: rgba(255, 255, 255, 0.829);
+}
+
+/* Flechas de dirección */
+.left,
+.right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: white;
+  z-index: 1;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+/* Indicadores (puntos) */
+.indicator {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  display: flex;
+  gap: 8px;
+  transform: translateX(-50%);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.dot.active {
+  opacity: 1;
+  background: #000000;
+}
+
+.PhotoContainer{
+  display: grid;
+  grid-template-columns: 46% 52%;
+  grid-template-rows: 20% 80%;
+  margin-top:4%;
+  
+
+}
+
+.Photo{
+  width:500px;
+  height:400px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  justify-self: end;
+}
+
+.PhotoTittle{
+  justify-self: start;
+  padding-left:20%;
+  align-self: center;
+}
+
+.PhotoText{
+  justify-self: start;
+  padding-left:23%;
+  align-self:start;
+}
+
+.PhotoContainer2{
+  display: grid;
+  grid-template-columns: 52% 46%;
+  grid-template-rows: 20% 80%;
+  margin-top:4%;
+  
+}
+
+.Photo2{
+  width:550px;
+  height:400px;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  justify-self: start;
+}
+
+.PhotoText2{
+  justify-self: end;
+  padding-right:20%;
+  align-self:start;
+}
+
+.PhotoTittle2{
+  justify-self: end;
+  padding-right:24%;
+  align-self: center;
 }
