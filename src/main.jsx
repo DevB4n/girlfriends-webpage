@@ -17,12 +17,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 //carousel images
 
 const images = [
-  "https://devb4n.github.io/girlfriends-webpage/src/media/imgs/atanasio.jpeg",
-  "https://devb4n.github.io/girlfriends-webpage/src/media/imgs/cajasan.jpeg",
-  "https://devb4n.github.io/girlfriends-webpage/src/media/imgs/grado_amor.jpeg",
-  "https://devb4n.github.io/girlfriends-webpage/src/media/imgs/parque_agua.jpeg",
-  "https://devb4n.github.io/girlfriends-webpage/src/media/imgs/parque_agua2.jpeg",
-  "https://devb4n.github.io/girlfriends-webpage/src/media/imgs/parque_florida.jpeg",
+  "https://github.com/DevB4n/girlfriends-webpage/blob/main/src/media/imgs/atanasio.jpeg",
+  "https://github.com/DevB4n/girlfriends-webpage/blob/main/src/media/imgs/cajasan.jpeg",
+  "https://github.com/DevB4n/girlfriends-webpage/blob/main/src/media/imgs/grado_amor.jpeg",
+  "https://github.com/DevB4n/girlfriends-webpage/blob/main/src/media/imgs/parque_agua.jpeg",
+  "https://github.com/DevB4n/girlfriends-webpage/blob/main/src/media/imgs/parque_agua2.jpeg",
+  "https://github.com/DevB4n/girlfriends-webpage/blob/main/src/media/imgs/parque_florida.jpeg",
 ];
 
 root.render(
