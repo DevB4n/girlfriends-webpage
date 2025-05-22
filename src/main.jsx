@@ -16,14 +16,22 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 //carousel images
 
+import atanasio from '../src/media/imgs/atanasio.jpeg'
+import cajasan from '../src/media/imgs/cajasan.jpeg'
+import grado_amor from '../src/media/imgs/grado_amor.jpeg'
+import parque_agua from '../src/media/imgs/parque_agua.jpeg'
+import parque_agua2 from '../src/media/imgs/parque_agua2.jpeg'
+import parque_florida from '../src/media/imgs/parque_florida.jpeg'
+
 const images = [
-  "./src/media/imgs/atanasio.jpeg",
-  "./src/media/imgs/cajasan.jpeg",
-  "./src/media/imgs/grado_amor.jpeg",
-  "./src/media/imgs/parque_agua.jpeg",
-  "./src/media/imgs/parque_agua2.jpeg",
-  "./src/media/imgs/parque_florida.jpeg",
-];
+  atanasio,
+  cajasan,
+  grado_amor,
+  parque_agua,
+  parque_agua2,
+  parque_florida,
+]
+
 
 root.render(
     <React.Fragment>
