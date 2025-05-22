@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 
 import { TemplatePhoto,TemplatePhoto2,StarterBanner,Carousel} from "./components/app";
 
+import audioMichael from '../src/media/audios/michael-giacchino-01-1m1-bundle-of-joy-inside-out.mp3'
 
 //videos import
 
@@ -35,7 +36,7 @@ const images = [
 
 root.render(
     <React.Fragment>
-        <StarterBanner url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSt9GQdKv2M-uxbq5hPe2OBReHipVnTA3gXA&s' src='./src/media/audios/michael-giacchino-01-1m1-bundle-of-joy-inside-out.mp3' text='los mejores momentos los paso contigo'/>
+        <StarterBanner url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSt9GQdKv2M-uxbq5hPe2OBReHipVnTA3gXA&s' src={audioMichael} text='los mejores momentos los paso contigo'/>
         <Carousel images={images}/>
         <TemplatePhoto PhotoUrl={caracoli} Tittle='lindo' Text='que lindos nos vemos <3.' /> 
         <TemplatePhoto2 PhotoUrl={noria} Tittle='la noria' Text='fue bacano y bastante lindo,a  pesar de no ser el mas extremo  fue el que mas disfrute.'/>
