@@ -13,7 +13,7 @@ export const Tittles = ({text}) => {
     </React.Fragment>)
 }
 
-export const StarterBanner = ({text}) =>{
+export const StarterBanner = ({text,src,url}) =>{
     return(<React.Fragment>
 
         <div className="starterBanner">
@@ -23,6 +23,12 @@ export const StarterBanner = ({text}) =>{
                 </svg>
             </button>
             <h1>{text}</h1>
+            <div id='Audio'>
+              <img src={url}/>
+                <audio autoPlay loop controls>
+                  <source src={src}type='audio/mp3'/>
+              </audio>
+            </div>
         </div>
 
     </React.Fragment>)
@@ -73,7 +79,7 @@ export const Carousel = ({ images }) => {
         </div>
         <div className="right" onClick={handleNext}>
           <svg
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="http://wwloop autoPlay w.w3.org/2000/svg"
             height="20"
             viewBox="0 96 960 960"
             width="20"
@@ -95,10 +101,10 @@ export const Carousel = ({ images }) => {
   );
 };
 
-export const TemplatePhoto = ({PhotoUrl,Tittle, Text}) =>{
+export const TemplatePhoto = ({PhotoUrl,Tittle, Text}) =>{  
   
   return(<div className='PhotoContainer'>
-    <video controls  className="Photo">
+    <video loop autoPlay controls className="Photo">
       <source src={PhotoUrl} type='video/mp4'></source>
     </video>
     <h1 className="PhotoTittle">{Tittle}</h1>
@@ -109,7 +115,7 @@ export const TemplatePhoto = ({PhotoUrl,Tittle, Text}) =>{
 export const TemplatePhoto2 = ({PhotoUrl,Tittle, Text}) =>{
   
   return(<div className='PhotoContainer2'>
-    <video controls className="Photo2">
+    <video loop autoPlay controls className="Photo2">
       <source src={PhotoUrl} type='video/mp4'></source>
     </video>
     <h1 className="PhotoTittle2">{Tittle}</h1>

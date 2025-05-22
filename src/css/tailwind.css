@@ -152,14 +152,14 @@ h1 {
 
 .PhotoText{
   justify-self: start;
-  padding-left:23%;
+  padding-left:10%;
   align-self:start;
 }
 
 .PhotoContainer2{
   display: grid;
   grid-template-columns: 52% 46%;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 40% 80%;
   margin-top:4%;
   
 }
@@ -174,8 +174,9 @@ h1 {
 
 .PhotoText2{
   justify-self: end;
-  padding-right:20%;
+  padding-right:10%;
   align-self:start;
+  padding-left: 30%;
 }
 
 .PhotoTittle2{
@@ -183,3 +184,17 @@ h1 {
   padding-right:24%;
   align-self: center;
 }
+
+#Audio{
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  position:absolute;
+  margin-left:90%;
+  margin-top:-1%;
+}
+#Audio img{
+  height: 50px;
+  border-radius: 100px;
+}
+

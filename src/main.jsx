@@ -17,22 +17,22 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 //carousel images
 
 const images = [
-  "https://github.com/DevB4n/girlfriends-webpage/blob/main/src/media/imgs/atanasio.jpeg",
-  "https://github.com/DevB4n/girlfriends-webpage/blob/main/src/media/imgs/cajasan.jpeg",
-  "https://github.com/DevB4n/girlfriends-webpage/blob/main/src/media/imgs/grado_amor.jpeg",
-  "https://github.com/DevB4n/girlfriends-webpage/blob/main/src/media/imgs/parque_agua.jpeg",
-  "https://github.com/DevB4n/girlfriends-webpage/blob/main/src/media/imgs/parque_agua2.jpeg",
-  "https://github.com/DevB4n/girlfriends-webpage/blob/main/src/media/imgs/parque_florida.jpeg",
+  "./src/media/imgs/atanasio.jpeg",
+  "./src/media/imgs/cajasan.jpeg",
+  "./src/media/imgs/grado_amor.jpeg",
+  "./src/media/imgs/parque_agua.jpeg",
+  "./src/media/imgs/parque_agua2.jpeg",
+  "./src/media/imgs/parque_florida.jpeg",
 ];
 
 root.render(
     <React.Fragment>
-        <StarterBanner text='para mamol'/>
+        <StarterBanner url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSt9GQdKv2M-uxbq5hPe2OBReHipVnTA3gXA&s' src='./src/media/audios/michael-giacchino-01-1m1-bundle-of-joy-inside-out.mp3' text='los mejores momentos los paso contigo'/>
         <Carousel images={images}/>
-        <TemplatePhoto PhotoUrl={caracoli} Tittle='amiguitos' Text='hola amiguitos' /> 
-        <TemplatePhoto2 PhotoUrl={noria} Tittle='mi foto 2' Text='chimba e texto mi papachoo'/>
-        <TemplatePhoto PhotoUrl={noria_fondo} Tittle='amiguitos' Text='hola amiguitos' /> 
-        <TemplatePhoto2 PhotoUrl={la_flora} Tittle='mi foto 2' Text='chimba e texto mi papachoo'/>
+        <TemplatePhoto PhotoUrl={caracoli} Tittle='lindo' Text='que lindos nos vemos <3.' /> 
+        <TemplatePhoto2 PhotoUrl={noria} Tittle='la noria' Text='fue bacano y bastante lindo,a  pesar de no ser el mas extremo  fue el que mas disfrute.'/>
+        <TemplatePhoto PhotoUrl={noria_fondo} Tittle='noria de fondo' Text='ya casi nos tocaba irnos, asi que disfrute lo lindo que fue estar contigo ese tiempo.' /> 
+        <TemplatePhoto2 PhotoUrl={la_flora} Tittle='yo un cantautor' Text='nada que decir, simplemente bacanisimo comer cositas simples caminar tocarte la guitarra y ver la naturaleza, una de mis favoritas.'/>
     </React.Fragment> 
 )
 
